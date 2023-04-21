@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        main {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(./charlie-chaplin-gcb72dbdf1_1280.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main header {
+            padding-top: 20px;
+
+        }
+
+        main header nav {
+            margin: 20px 50px 20px 350px;
+            padding: 20px;
+            background-color: rgb(114, 64, 29);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px rgb(84, 42, 13);
+
+        }
+
+        main header nav ul li {
+            display: inline-block;
+            margin: 15px;
+
+        }
+
+        main header nav ul {
+            padding-left: 50px;
+
+        }
+
+        main header nav ul li a {
+            text-decoration: none;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px white;
+            color: white;
+        }
+
+
+        #h1 {
+            padding-left: 20px;
+            font-size: 80px;
+            text-shadow: 4px 4px 4px black;
+            display: inline-block;
+
+        }
+
+        header>nav {
+            opacity: 0.8;
+        }
+
+        #mbox {
+            height: 450px;
+            width: 500px;
+            background-color: rgb(114, 64, 29);
+            margin: 40px 700px;
+            border-radius: 30px;
+            opacity: 0.8;
+            padding: 50px 100px;
+        }
+
+        .box h1{
+                margin: 0 0 30px;
+                padding: 0;
+                color: #fff;
+                text-align: center;
+                font-size: 40px;
+                text-shadow: 4px 4px 4px black;
+            }
+            
+            .box .inputbox{
+                position: relative;
+                
+            }
+            
+            .box .inputbox input{
+                width: 100%;
+                padding: 10px 0px 0px 20px;
+                font-size: 16px;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+            }
+            
+            .box .inputbox label{
+                position: absolute;
+                top: 0;
+                left: 20px;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                letter-spacing: 1px;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .box .inputbox i{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                letter-spacing: 1px;
+                pointer-events: none;
+                transition: .5s;
+            }
+            
+            .box .inputbox input:focus ~ label,.box .inputbox input:valid ~ label{
+                top: -18px;
+                left: 0;
+                color: white;
+                font-size: 12px;
+                
+            }
+            
+            
+            .box input[type="Submit"]{
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #03a9f4;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 4px 4px 4px black;
+                
+            }
+            
+            .bottom-text{
+                color: #fff;
+            }
+            
+            .box a{
+                color: skyblue;
+                
+            }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+
+                <ul>
+                    <h1 id="h1">Movies.com &nbsp &nbsp &nbsp &nbsp &nbsp</h1>
+                    <li><a href="#" class="nbtn">Login</a></li>
+                    <li><a href="#" class="nbtn">Register</a></li>
+                    <li><a href="#" class="nbtn">About Us</a></li>
+                    <li><a href="#" class="nbtn">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div>
+                <div id="mbox" class="box">
+                    <h1>Login</h1>
+                    <form>
+                        <div class="inputbox">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="text" required="" name="username" >
+                            <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                            <label>Email</label>
+                        </div>
+                        
+                        <div class="inputbox">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="Password" required="" name="password" >                            
+                            <label>Password</label>
+                        </div>
+                        <center> <input type="submit" name="btn" value="Login"></center><br><br>
+                        <div class="bottom-text">
+                            <center>Don't have account ? <a href=#>Registration</a></center>
+                        </div><br><br>
+                        
+                    </form> 
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            box-shadow: 0px 2px 10px rgb(186, 186, 186);
+            width: 100%;
+            height: 61px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo {
+            width: 170px;
+            height: 45px;
+            margin-left: 30px;
+        }
+
+        .my-booking {
+            width: 120px;
+            height: 30px;
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-evenly;
+            border: 1px solid rgb(229, 229, 229);
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: rgb(115, 115, 115);
+        }
+
+        #btn1 {
+            display: flex;
+        }
+
+        .rent-box {
+            width: 120px;
+            height: 30px;
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-evenly;
+            border: 1px solid rgb(229, 229, 229);
+            padding-top: 4px;
+            color: rgb(115, 115, 115);
+            padding-bottom: 4px;
+        }
+
+        #btn1 {
+            /* margin: 20px; */
+            width: 405px;
+            height: 32.2px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .Pro-owner {
+            background-color: rgba(15, 156, 130, 1);
+            height: 30px;
+            font-weight: 400;
+            padding: 3px 10px;
+            text-decoration: none;
+            border: none;
+            color: white;
+            line-height: 23px;
+        }
+
+        #btn {
+            display: flex;
+            align-items: center;
+            margin-left: 670px;
+        }
+
+        #btn2 {
+            display: flex;
+        }
+
+        .sign {
+            width: 100px;
+            height: 21px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .login {
+            width: 66px;
+            height: 21px;
+            border-left: 1px solid;
+            border-right: 1px solid;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+        }
+
+        .btn21 {
+            text-align: center;
+            line-height: 21px;
+        }
+
+        .menu {
+            width: 100px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .menu1{
+            text-decoration: none;
+        }
+        .rent{
+            text-decoration: none;
+        }
+
+        #m-text {
+            font-weight: 400;
+            font-size: 32px;
+            color: #787676;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            padding-top: 30px;
+        }
+        .btn2{
+            width: 33.33%;
+            height: 50px;
+            /* border-radius: 1px solid #efefef; */
+            /* border-top-left-radius: 4px; */
+            cursor: pointer;
+            display: inline-block;
+            line-height: 40px;
+            font-size: 17px;
+            font-weight: 400;
+            border: 1px solid;
+            text-align: center;
+            color: #afaaaa;
+            text-decoration: none;
+        }
+        #btn12{
+            /* border: none; */
+            border-top: 1px solid #afaaaa;
+            border-left: 1px solid #afaaaa;
+            border-right: 1px solid #afaaaa;
+            border-bottom: 3px solid red;
+            font-weight: bold;
+            color: red;
+        }
+        
+        .box{
+            width: 370px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 1px solid #919191;
+            margin: 30px auto 0;
+            border: solid #efefef;
+            border-width: 1px 1px 0;
+            border-radius: 4px 4px 0 0;
+        }
+        #search-bar{
+            height: 50px;
+            width: 1000px;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 60px;
+            font-size: 18px;
+            margin-left: 250px;
+        }
+        #city{
+            height: 50px;
+            width: 150px;
+            color: #919191;
+            border: 1px solid;
+            border-radius: 5px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        #bar{
+            height: 50px;
+            width: 700px;
+            font-size: 15px;
+            text-align: start;
+            padding-left: 20px;
+            color: #919191;
+            border: 1px solid;
+        }
+        #s-btn{
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            border-radius: 0 5px 0 0;
+            /* border: 1px solid; */
+            color: white;
+            background-color: #E3324a;
+        }
+        #search-bar1{
+            height: 50px;
+            width: 1000px;
+            border: 1px solid #919191;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            border-radius: 0 0 5px 5px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 18px;
+            margin-left: 250px;
+        }
+        #select{
+            height: 40px;
+            width: 300px;
+            line-height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: start;
+            color: #7c7c7c;
+            margin-left: 10px;
+        }
+        #bhk-btn{
+            height: 40px;
+            width: 150px;
+            line-height: 40px;
+            color: #919191;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        #avai-btn{
+            height: 40px;
+            width: 150px;
+            line-height: 40px;
+            color: #919191;
+            border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #text{
+            font-weight: 400;
+            font-size: 25px;
+            color: #787676;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+
+        }
+        #btn5{
+            height: 50px;
+            width: 200px;
+            line-height: 40px;
+            color: #919191;           
+            padding: 0px;
+            margin: 30px;
+            margin-left: 670px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn3{
+            text-align: center;
+            line-height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 50px;
+            width: 200px;
+            background-color: rgba(15, 156, 130, 1);
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .search-btn{
+            text-decoration: none;
+            color: white;
+        }
+        #mspan {
+            display: flex;
+            height: 60px;
+            width: 500px;
+            /* border: 1px solid; */
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-color: #FCB24733;
+        }
+
+        .msub {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid; */
+            margin: 0px;
+            padding: 0px;
+            margin-left: 10px;
+        }
+
+        #mspan3 {
+            border: none;
+            border-right: 1px solid;
+        }
+        .mdata{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img alt="logo" src="https://assets.nobroker.in/static/img/logos/nb_logo_new_trans.svg" class="logo">
+            <div id="btn">
+                <div id="btn1">
+                    <div class="my-booking">
+                        <div>
+                            <img src="https://assets.nobroker.in/nb-new/public/myBooking.svg" alt="rent">
+                        </div>
+                        <a class="rent" href="#" target="_blank">My Booking</a>
+                    </div>
+                    <div class="rent">
+                        <div class="rent-box">
+                            <div>
+                                <img src="https://assets.nobroker.in/nb-new/public/payrent.png" alt="rent">
+                            </div>
+                            <a class="rent" href="#" target="_blank">Pay Rent</a>
+                        </div>
+                    </div>
+                    <a class="Pro-owner" href="#" target="_blank">
+                        For Property owners
+                    </a>
+                </div>
+                <div id="btn2">
+                    <div class="btn21">
+                        <a class="sign" href="#" target="_blank">Sign up</a>
+                    </div>
+                    <div class="btn21">
+                        <a class="login" href="#" target="_blank">Log in</a>
+                    </div>
+                    <div class="menu">
+                        <i class="gg-menu"></i>
+                        <a class="menu1" href="#" target="_self">Menu</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div id="m-text">
+                World's Largest NoBrokerage Property Site
+            </div>
+            <span id="mspan">
+                <span class="msub" id="mspan3">
+                    <img src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg" alt="" width="30px"
+                        height="30px" id="mimg1" class="mimg">
+                    <a id="mspan1" class="mdata" href="#" target="_blank">Rental Agreement</a>
+                </span>
+                <span class="msub" id="mspan4">
+                    <img src="https://assets.nobroker.in/nb-new/public/Home/deliveryIcon.svg" alt="" width="30px"
+                        height="30px" id="mimg2" class="mimg">
+                    <a id="mspan2" class="mdata" href="#" target="_blank">Next Day Delivery</a>
+                </span>
+            </span>
+            <div class="box">
+                <div class="btn2">Buy</div>
+                <div class="btn2" id="btn12">Rent</div>
+                <div class="btn2">Commercial</div>
+            </div>
+            <div id="search-bar">
+                <select name="" id="city">
+                    <option value="" disabled selected>Banglore</option>
+                    <option value="">Banglore</option>
+                    <option value="">Chennai</option>
+                    <option value="">Pune</option>
+                    <option value="">Gurgoan</option>
+                    <option value="">Hydradad</option>
+                </select>
+                <input type="text" name=" " id="bar" placeholder="Search upto 3 localities or landmarks">
+                <div id="s-btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <a class="search-btn" href="#" target="_blank">Search</a>
+                </div>
+
+            </div>
+            <div id="search-bar1">
+                <div id="select">
+                    <label for="r-btn"></label><br>
+                    <input type="radio" name="gen" id="r-btn">
+                    <label for="">Full House</label><br>
+                    <input type="radio" name="gen" id="r-btn">
+                    <label for="">PG/Hostel</label><br>
+                    <input type="radio" name="gen" id="r-btn">
+                    <label for="">Flatments</label><br>
+                </div>
+                <select name="" id="bhk-btn">
+                            <option value="" disabled selected>BHK Type</option>
+                            <option value="">Office Space</option>
+                            <option value="">Co-Work</option>
+                            <option value="">Cafe</option>
+                            <option value="">Shop</option>
+                            <option value="">Showroom</option>
+                </select> 
+                <select name="" id="avai-btn">
+                    <option value="" disabled selected>Availability</option>
+                    <option value="">Available</option>
+                    <option value="">Not-Available</option>      
+                </select>
+            </div>
+            <div id="text">
+                ------------
+                Are you a Property Owner?
+                ------------
+            </div>
+            <div class="btn" id="btn5">
+                <!-- <button class="btn3" id="" type="button">Post Free Property Ad</button> -->
+                <a class="btn3" id="" type="button" href="" target="_blank">Post Free Property Ad</a>
+            </div>
+        </main>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>LOGIN</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        
+        .Main{
+            height: 600px;
+            width: 550px;
+            border: 0.8px solid;
+            margin-top: 1%;
+            margin-left: 30%;            
+            color: white;     
+        }
+        #Login{
+            height: 350px;
+            width: 350px;
+            margin-left: 100px;
+            margin-top: 30px;
+            
+        }
+        textarea {
+         width: 100%;
+        }
+        button{
+            padding: 15px 32px;
+            font-size: 16px;
+            color:#2B3467 ;
+            background-color:white ;
+            cursor: pointer;
+        }
+        .Txt{
+            border: 0.5px solid white;
+            color: Solid White;
+            padding: 8px;
+            margin-top: 3px;
+        }
+        input{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <form action="">
+            
+            <table id="Login" cellspacing="10px">
+                <tr>
+                    <td colspan="2">
+                        <h3>MAY 25, 2021</h3>
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h1>Join the event</h1><br>
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>
+                        <label for="N1">
+                            First Name
+                        </label>
+                        <input  class="Txt" type="text" name="" id="N1" autofocus required placeholder="Enter Your first Name">
+                    </td>
+
+                    <td>
+                     <label for="L1">
+                        Last Name
+                     </label>
+                     <input class="Txt" type="text" name="" id="L1" required placeholder="Enter Your last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <label for="E1">
+                        Business E-Mail
+                     </label>
+                     <input class="Txt" type="email" name="" id="E1" placeholder="Enter Your email">
+                    </td>
+
+                    <td>
+                     <label for="T1">
+                        Title
+                     </label>
+                     <input  class="Txt" type="text" name="" id="T1" placeholder="What is your job title?">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <label for="C1">
+                        Company Name
+                     </label>
+                     <input class="Txt" type="text" name="" id="C1" placeholder="Where do you work?">
+                    </td>
+
+                    <td>
+                     <label for="C2">
+                        Company Size
+                     </label>
+                     <input class="Txt" type="number" name="" id="C2" placeholder="Select">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                     <label for="M1">
+                        What are you hoping to learn about?
+                     </label>
+                     <!-- <br>
+                     <input type=" text" name="" id="M1" size="30"> -->
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="" id="M1" cols="15" rows="5" placeholder="Message"></textarea>
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                     <input type="checkbox" name="" id="">
+                     <label for="M2">
+                        I would like to receive emails about future web
+                     </label>
+                     
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="btn">
+                            <button>Register for this event</button>
+                        </div>
+                       </td>
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

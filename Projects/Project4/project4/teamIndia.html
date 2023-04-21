@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            
+        }
+        main{
+            height: 98vh;
+            width: 800px;
+            background-image: url(./IMG-20230314-WA0007-01.jpeg);
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: cover;
+            margin-top: 6px;
+
+        }
+        #parent{
+            height: 98vh;
+            width: 800px;
+            /* margin-top: 5px; */
+            border: 5px solid white;
+            /* box-shadow: 4px 4px 4px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.4 );
+            align-items: end;
+        }
+        #child{
+            height: 60vh;
+            width: 800px;
+            /* border: 1px solid; */
+            margin-bottom: 20px;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #line1{
+            height: 100px;
+            width: 690px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+            text-shadow: 4px 4px 4px black;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* border: 1px solid; */
+            margin: 20px;
+        }
+        #line2{
+            height: 100px;
+            width: 690px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+            text-shadow: 4px 4px 4px black;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* border: 1px solid; */
+            margin: 20px;
+        }
+        #line3{
+            height: 100px;
+            width: 690px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+            text-shadow: 4px 4px 4px black;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* border: 1px solid; */
+            margin: 20px;
+        }
+        .player{
+            height: 80px;
+            width: 80px;
+            border: 1px solid;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        h1{
+            font-size: 80px;
+            font-weight: 100;
+            margin-right: 530px;
+            margin-top: 50px;
+            color: white;
+            font-stretch: condensed;
+            text-shadow: 4px 4px 4px black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        #h2{
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: start;
+            text-shadow: 4px 4px 4px black;
+            color: white;
+            font-stretch: condensed;
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+        #h21{
+            margin-right: 230px;
+        }
+        #h22{
+            /* margin-right: 50px; */
+            margin-right: 100px;
+            display: inline-block;
+        }
+        #c{
+            height: 30px;
+            width: 30px;
+            display: inline-block; 
+            margin-left: 10px;
+            border: 4px solid;
+            text-align: center;
+            line-height: 17px;
+            border-radius: 50%;
+            /* margin-right: ; */
+        }
+        .player{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            border: 1px solid black;
+            box-shadow: 4px 4px 15px black;
+        }
+        #player1{
+            background-image: url(./KL-Rahul.jpg);
+        }
+        #player2{
+            background-image: url(./Ruturaj-Gaikwad.jpg);
+        }
+        #player3{
+            background-image: url(./shreyas-lyer.jpg);
+        }
+        #player4{
+            margin-left: 20px;
+            background-image: url(./Suryakumar-Yadav.png);
+        }
+        #player5{
+            background-image: url(./rishabh-pant.jfif);
+        }
+        #player6{
+            background-image: url(./Ishan-Kishan.jpg);
+        }
+        #player7{
+            margin-left: 10px;
+            background-image: url(./Venkatesh-Iyer-Twitter-2323.jpg);
+        }
+        #player8{
+            background-image: url(./chahal.jpg);
+        }
+        #player9{
+            background-image: url(./ravichandran-ashwin.jpg);
+        }
+        #player10{
+            background-image: url(./Axar-Patel.jpg);
+        }
+        #player11{
+            background-image: url(Avesh-Khan.jpg);
+        }
+        #player12{
+            background-image: url(./bhuvneshwar-kumar.jpg);
+        }
+        #player13{
+            background-image: url(./Deepak-chahar.jpg);
+        }
+        #player14{
+            background-image: url(./Harshal-Patel-2.jpg);
+        }
+        #player15{
+            background-image: url(./mohammed-siraj.jpg);
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="parent">
+            <h1>INDIA</h1>
+            <div id="h2">
+                <h2 id="h21">SQUAD FOR <br>T20Is AGAINST NZ</h2>
+                <h2 id="h22">ROHIT <br>SHARMA<div id="c">c</div></h2>
+            </div>
+            <div id="child">
+                <div id="line1">
+                    <div class="player-box1">
+                        <div class="player" id="player1"></div>
+                        <span>KL</span><br>
+                        <span>RAHUL</span>
+                    </div>
+                    <div class="player-box2">
+                        <div class="player" id="player2"></div>
+                        <span>RUTURAJ <br> GAIKWAD</span>
+                        
+                    </div>
+                    <div class="player-box3">
+                        <div class="player" id="player3"></div>
+                        <span>SHREYAS <br> IYER</span>
+                        
+                    </div>
+                    <div class="player-box4">
+                        <div class="player" id="player4"></div>
+                        <span>SURYAKUMAR<br>YADAV</span><br>
+                        
+                    </div>
+                    <div class="player-box5">
+                        <div class="player" id="player5"></div>
+                        <span>RISHAB <br> PANT</span>
+                    </div>
+                </div>
+                <div id="line2">
+                    <div class="player-box6">
+                        <div class="player" id="player6"></div>
+                        <span>ISHAN <br> KISHAN</span>
+                    </div>
+                    <div class="player-box7">
+                        <div class="player" id="player7"></div>
+                        <span>VENKATESH <br> IYER</span>
+                    </div>
+                    <div class="player-box8">
+                        <div class="player" id="player8"></div>
+                        <span>YUZVE <br> CHAHAL</span>
+                    </div>
+                    <div class="player-box9">
+                        <div class="player" id="player9"></div>
+                        <span>RAVI<br>ASHWIN</span>
+                    </div>
+                    <div class="player-box10">
+                        <div class="player" id="player10"></div>
+                        <span>AXIR<br>PATEL</span>
+                    </div>
+                </div>
+                <div id="line3">
+                    <div class="player-box11">
+                        <div class="player" id="player11"></div>
+                        <span>AVESH<br>KHAN</span>
+                    </div>
+                    <div class="player-box12">
+                        <div class="player" id="player12"></div>
+                        <span>BHUV<br>KUMAR</span>
+                    </div>
+                    <div class="player-box13">
+                        <div class="player" id="player13"></div>
+                        <span>DEEPAK<br>CHAHAR</span>
+                    </div>
+                    <div class="player-box14">
+                        <div class="player" id="player14"></div>
+                        <span>HARSHAL<br>PATEL</span>
+                    </div>
+                    <div class="player-box15">
+                        <div class="player" id="player15"></div>
+                        <span>MOHD.<br>SIRAJ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
