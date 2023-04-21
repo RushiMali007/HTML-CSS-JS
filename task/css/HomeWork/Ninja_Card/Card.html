@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* margin: 0px;
+            padding: 0px; */
+        }
+
+        body {
+            /* background-image: url(./village.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-image: url(./nav.jpg);
+            /* background-color: rgb(190, 138, 41); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            height: 270px;
+            width: 1500;
+            border: 1px solid;
+            box-shadow: 8px 8px 5px;
+
+
+        }
+
+        h1 {
+            padding: 0px 0px 0px 160px;
+            color: white;
+            text-shadow: 8px 8px 5px black;
+            font-size: 80px;
+
+        }
+
+        #btnparent {
+            padding: 0px 0px 0px 1130px;
+
+        }
+
+        .btn1{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            padding: 10px 12px 12px;
+            margin: 5px 5px 5px 5px;
+            background-color: rgb(174, 105, 55);
+            border-radius: 10px;
+            box-shadow: 8px 8px 5px black;
+
+        }
+
+
+        #parent_Border {
+            height: 550px;
+            width: 400px;
+            border: 2px solid;
+            margin-left: 70px;
+            border-radius: 40px;
+            /* background-color: rgb(161, 224, 237); */
+            background-image: url(./bg.jpg);
+            box-shadow: 12px 12px 4px rgb(133, 62, 11);
+        }
+
+        #title {
+            padding: 30px 65px;
+            font-size: 30px;
+            color: rgb(106, 46, 3);
+            text-shadow: 2px 2px 4px rgb(106, 46, 3);
+        }
+
+        #img1 {
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            background-image: url(./naruto.jpg);
+            background-size: cover;
+            color: rgb(106, 46, 3);
+            box-shadow: 6px 6px 5px black;
+            border-radius: 20px;
+
+
+        }
+
+        #img2 {
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            background-image: url(./sasuke.png);
+            background-size: cover;
+            color: rgb(106, 46, 3);
+            box-shadow: 6px 6px 5px black;
+            border-radius: 20px;
+
+
+        }
+
+        #img3 {
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            background-image: url(./hinata.jpg);
+            background-size: cover;
+            color: rgb(106, 46, 3);
+            box-shadow: 6px 6px 5px black;
+            border-radius: 20px;
+
+
+        }
+
+        #data {
+            font-size: 20px;
+            line-height: 35px;
+            padding-top: 25px;
+            padding-left: 40px;
+            color: rgb(106, 46, 3);
+            /* text-shadow: 1px 1px 0px rgb(106, 46, 3); */
+
+        }
+
+        #parent_Border {
+            display: inline-block;
+        }
+
+        section {
+            margin: 50px 0px 50px 0px;
+        }
+
+        hr {
+            border: 2px solid;
+        }
+
+        #map{
+            border: 2px solid;
+            box-shadow: 4px 4px 6px black;
+            margin: 0px 30px 0px 30px;
+            display: inline-block;
+            background-color: black;
+           
+        }
+
+        p{
+            height: 140px;
+            width: 600px;
+            
+            /* margin: 0px 0px 0px 30px; */
+            
+        }
+
+        #details {
+            display: inline-block;
+            color: white;
+            margin: 30px;
+            text-decoration: none;
+            text-align: justify;
+            font-size: 17px bold;
+            text-shadow: 0px 0px 5000px black;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 5px;
+            color: #333;
+            padding: 20px;
+            height: 460px;   
+            box-shadow: 8px 8px 10px black;
+        }
+        @supports  (backdrop-filter: none) {
+            #details {
+        backdrop-filter: blur(20px);
+        background-color: rgba(255, 255, 255, 0.5);  
+         }
+        
+        }
+        #footer{
+            padding: 70px;
+            background-image: url(./village1.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* opacity: ; */
+            text-decoration: none;
+            
+            /* background-color:rgb(158, 87, 36);; */
+            /* margin: 20px; */
+            height: 650px;
+            
+            
+        }
+        .vl {
+             border-left: 5px solid white;
+             height: 460px; 
+             display: inline-block;
+             box-shadow: 4px 4px 6px black;
+             
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        a{
+            color: red;
+        }
+        .link:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Ninja Academy</h1>
+            <div id="btnparent">
+                <a href="" class="btn1">Home</a>
+                <a href="" class="btn1">Contact</a>
+                <a href="" class="btn1">About</a>
+            </div>
+        </header>
+        <section>
+            <div class="mainparent">
+                <Div id="parent_Border">
+                    <center>
+                        <div id="title">
+                            <b>|| Naruto Uzumaki ||</b>
+                        </div>
+                        <div id="img1"></div>
+                    </center>
+
+                    <div id="data">
+                        <b>
+                            <ul>
+                                <li>Rank : Genin</li>
+                                <li>Gender : Male</li>
+                                <li>Age : 13</li>
+                                <li>Speciality :Jinchuuriki of the
+                                    Kyuubi Son of the 4th Hokage
+                                    Elemental Affiliation: Fuuton</li>
+
+                            </ul>
+                        </b>
+                    </div>
+                </Div>
+                <Div id="parent_Border">
+                    <center>
+                        <div id="title">
+                            <b>|| Sasuke Uchiha ||</b>
+                        </div>
+                        <div id="img2"></div>
+                    </center>
+
+                    <div id="data">
+                        <b>
+                            <ul>
+                                <li>Rank : Genin</li>
+                                <li>Gender : Male</li>
+                                <li>Age : 13</li>
+                                <li>Speciality :Sasuke awakens his Sharingan,
+                                    his clan's inherited ability
+                                    to see through illusions</li>
+
+                            </ul>
+                        </b>
+                    </div>
+                </Div>
+                <Div id="parent_Border">
+                    <center>
+                        <div id="title">
+                            <b>|| Hinata Hyuga ||</b>
+                        </div>
+                        <div id="img3"></div>
+                    </center>
+                    <div id="data">
+                        <b>
+                            <ul>
+                                <li>Rank : Genin</li>
+                                <li>Gender : Female</li>
+                                <li>Age : 13</li>
+                                <li>Speciality :As a member of the Hyuga Clan
+                                    Master of Gentle Fist
+                                    Byakugan (White Eye)
+                                </li>
+
+                            </ul>
+                        </b>
+                    </div>
+                </Div>
+            </div><br><br>
+            <hr>
+            <div id="footer">
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.145365902736!2d134.9985581151855!3d34.57518818046676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600082a06c54bfcd%3A0x87602b6803be1f05!2zMjQyNeeVqjLlj7cgS3VzdW1vdG8sIEF3YWppLCBIeW9nbyA2NTYtMjMwMSwgSmFwYW4!5e0!3m2!1sen!2sin!4v1677162530542!5m2!1sen!2sin"
+                        width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="vl"></div>
+                <div id="details">
+                    <p>
+                        
+                         Hey, Naruto fans! I have a good news to you all!
+                        FINALLY, AN ACTUAL NARUTO THEME PARK IS NOW OPENED!!
+                        (Well, it’s actually NARUTO x BORUTO collaboration theme park…)
+                        It’s called Shinobi-zato, and it is located in a huge park
+                        called Nijigen-no-mori, which translates to ‘2-D forest’ in Japanese.
+                        Nijigen-no-mori is in Awajishima, an island near Kobe.
+                        It takes less than an hour from Kobe, so if you are planning
+                        a trip to Osaka area, this place might be one of destination!
+                        For you who love Naruto, let me go over the highlight of Shinobi-zato.
+
+                        <h2>NARUTO THEME PARK | SHINOBIZATO HIGHLIGHTS</h2>
+                        <ol>
+                            <li>Hokage Rock</li>
+                            <li>Missions</li>
+                            <li>Real Life Ichiraku Ramen</li>
+                            <li>Transportation</li>
+                            <li>Frequently Asked Questions: FAQ</li>
+                        </ol>
+
+                        Nijigen no mori Japansese Website: <a class="link" href="https://nijigennomori.com/">https://nijigennomori.com/</a><br>
+                        Nijigen no mori English Website: <a class="link" href="https://ticket.nijigennomori.com/en/">https://ticket.nijigennomori.com/en/</a><br>
+                        For More Details visit Our Website <a  class="link" href="https://www.tokyozebra.com/blog/naruto-shinobizato">www.tokyozebra.com</a><br><br>
+                        Contact : business@tokyozebra.com (business related emails only) <br><br>
+                    </p>
+
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
