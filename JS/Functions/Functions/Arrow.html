@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=(a,b)=>{
+            console.log("This is Arrow  Function");
+            return a*b;
+        }
+        console.log(arr(10,20));
+
+        /*IIFE: IMMIDIATE INVOKING FUNCTION EXPRESSION:
+        AS SOON AS ITS INVOKED IT DESTROY WE CANNOT REUSE THIS FUNCTION AGAIN AND AGAIN.*/
+
+        (function () {
+            console.log("This is Life");
+        }())
+        /*Out Side Paraenthesis is not allowed 
+        ()   ====> THIS IS NOT A FUNCTION (Not allowed)
+        */
+    </script>
+</body>
+</html>

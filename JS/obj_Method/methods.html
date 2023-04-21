@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj ={
+            key1:"Value1",
+            key2:"value2",
+            key3:"Value3",
+            key4:"Value4"
+        }
+        //Add()
+        obj.key5="value5"
+        console.log(obj);
+
+        // delete(): it is used to delete  the key and value pair from an object 
+        delete(obj.key5);
+        console.log(obj);
+
+        // seal():  it is used to lock the object, it means that we cant add new key and value pair but we can modify extsting one. 
+        Object.seal(obj)
+        obj.key5="value5";
+        console.log(obj);
+        obj.key4="Value4 updated";
+        console.log(obj);
+
+        //freeze(): it is used to freez the object . means we cant do any modification
+        Object.freeze(obj)
+        obj.key="updated";
+        console.log(obj);
+        obj.key5="value5";
+        console.log(obj);
+
+        //keys(): it is uesed to fetched the keys of an object
+        console.log(Object.keys(obj));
+
+        //values(): it is used to ferched the values of an object
+        console.log((Object.values(obj)));
+
+        // entries(): it is used to convert an object into an array
+        console.log(Object.entries(obj));
+        
+        // assign():it is used to merage more than one object together
+        let obj1={
+            key1:"value1",
+            key2:"value2"
+        }
+        let obj2={
+            key1:"value3",
+            key4:"value4"
+        }
+        console.log(Object.assign(obj1,obj2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 ="hello";
+        console.log(typeof str1);
+
+        //By using new keyword
+        let str2 = new String ("hello")
+        console.log(str2);
+        str2[1]="B";
+        console.log(str2);
+
+        str2="bye";
+        console.log(str2);
+
+        let str3 =`pineapple`
+        console.log(str3.length);
+
+        // slice(start index , end index)
+        console.log(str3.slice(1,5));
+
+        let str4="java Script"
+        console.log(str4.length);
+        console.log(str4.slice(-4));
+
+        //toupperCase() / lowercase()
+
+        let str5="uppercase"
+        console.log(str5.toUpperCase());
+
+        let str6="LOWERCASE"
+        console.log(str6.toLowerCase());
+
+        //repeate()
+        let str7="Mumbai to Goa, "
+        console.log(str7.repeat(7));
+
+        //charAt()
+        let str8="Mumbai";
+        console.log(str8.charAt(3));
+
+        //charCodeAr()
+        let str9="a pple";
+        console.log(str9.charCodeAt(1));
+
+        //include()
+        console.log(str9.includes("A"));
+
+        //replace("replace value, new value")
+        let str10="Replace value";
+        console.log(str10.replace("Replace", "new"));
+
+        //startswith(value)
+        let str11="startswith";
+        console.log(str11.startsWith("s"));
+
+        //endswith
+        let str12= "endswith"
+        console.log(str12.endsWith("H"));
+
+        //concate()
+        let str13="con";
+        let str14="cat";
+        console.log(str13+str14);
+        console.log(str13.concat(str14));
+
+        //substr()
+        let subStr= "SubString"
+        console.log(subStr.substr(1,5));
+
+        //trim()
+        let tri= " trim"
+        console.log(tri.length);
+        console.log(tri.trim());
+        console.log(tri.length);
+         
+        let trimStart1= " trim "
+        console.log(trimStart1);
+        console.log(trimStart1.trimStart());
+        console.log(trimStart1.trimEnd());
+
+    </script>
+</body>
+</html>

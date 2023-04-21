@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let gokulDham = [
+            ["Wlecome to Basemen 2"],
+            ["Wlecome to Basemen 1"],
+            [
+                { OwnerName: "Jethalal", ContactNo: 1234},
+                { OwnerName: "Mehjtaji", ContactNo: 12354},
+                { OwnerName: "HathiBhai", ContactNo: 1256},
+                { OwnerName: "Popatlal", ContactNo: 1278}
+            ],
+            [
+                { OwnerName: "Babitaji", ContactNo: 1234},
+                { OwnerName: "Bhide", ContactNo: 12389},
+                { OwnerName: "Sodi", ContactNo: 12676},
+                { OwnerName: "dolly", ContactNo: 12874}
+            ],
+            [
+                { OwnerName: "Lucifer", ContactNo: 12434},
+                { OwnerName: "John Wick", ContactNo: 12354},
+                { OwnerName: "Harry", ContactNo: 12566},
+                { OwnerName: "Roshni", ContactNo: 12658}
+            ],
+            [
+                { OwnerName: "Obito", ContactNo: 1234},
+                { OwnerName: "Madara", ContactNo: 127654},
+                { OwnerName: "Hiddan", ContactNo: 1267456},
+                { OwnerName: "Itachi", ContactNo: 156548}
+            ],
+            [
+                { OwnerName: "Naruto", ContactNo: 347544},
+                { OwnerName: "Pain", ContactNo: 12356544},
+                { OwnerName: "Kakashi", ContactNo: 1254536},
+                { OwnerName: "Rin", ContactNo: 12763538}
+            ]
+        ]
+
+        console.log(gokulDham);
+        console.log(gokulDham[prompt("Enter Floor Number")][prompt("Enter your flat number")]);
+
+
+        /*Updating the values*/
+
+        console.log(gokulDham);
+        delete(gokulDham[2][1].OwnerName)
+        console.log(gokulDham);
+        gokulDham[2][1]={OwnerName: "Tanjiro" ,ContactNo:123421}
+        console.log(gokulDham[2][1]);
+        // console.log(Object.keys(gokulDham[2][1]));
+        console.log(Object.values(gokulDham[2][1]));
+        console.log(gokulDham[2][1].OwnerName);
+
+        /*Adding Array*/
+        gokulDham[7]=[{OwnerName:"Mahi" ,ContactNo:12321},{OwnerName:"Virat" ,ContactNo:123341},{OwnerName:"Rohit" ,ContactNo:12651},{OwnerName:"Hardik" ,ContactNo:89750}]
+        console.log(gokulDham);
+    </script>
+</body>
+
+</html>
