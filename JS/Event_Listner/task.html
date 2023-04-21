@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Polio{
+            height: 400px;
+            width: 300px;
+            border: 1px solid;
+            display: flex;
+            /* display: inline; */
+            justify-content: center;
+            align-items: center;
+            /* padding: 50px; */
+            /* margin: 20px; */
+            
+        }
+        .inp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 100%; */
+            padding: 5px;
+            margin-top: 10px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="Polio" onsubmit="getAge()">
+        <form action="">
+            <div id="name" class="inp">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="">
+            </div>
+            <div id="age1" class="inp">
+                <label for="age">Enter Age :</label>
+                <input type="text" name="age" id="age">
+            </div>
+            <div id="gender" class="inp">
+                <select name="gender" id="gendee">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <center><button type="submit" class="inp" >Submit</button></center>
+        </form>
+        <script>
+            function getAge() {
+                let age=document.getElementById("age").value;
+                if (age>0 && age<=6) {
+                    alert("Register sucessfully")
+                } else {
+                    alert("Invalid Age")
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
