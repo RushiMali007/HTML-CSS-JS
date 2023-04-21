@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child_selector</title>
+    <style>
+        /* here only child element will change color not grand child also */
+        div>p {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1st Para of div</p>
+        <p>2nd para of div</p>
+        <section>
+            <p>1st para of section <section></section></p>
+        </section>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-image: url(./net.jpg);
+            height: 100vh;
+            width: 100%;
+            
+        }
+        #bg{
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color:rgba(0, 0, 0, 0.5);
+        }
+        #box{
+            height: 600px;
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.8);
+           
+        }
+        h1{
+            color: white;
+            font-size: 40px;
+            margin: 0px ;
+        }
+        #form1{
+            margin: 50px;
+            margin-top: 80px;
+            /* padding: 50px; */
+        }
+        input{
+            padding: 20px 90px 10px 20px ;
+            font-size: 20px;
+            margin-top: 10px;
+            background-color: rgba(68, 68, 68, 0.7);
+            border-radius: 5px;
+            color: white;
+            border: none;
+        }
+        #mail{
+            margin-top: 30px;
+        }
+        #pass{
+            margin-top: 30px;
+        }
+        #btn{
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 30px;
+            padding: 15px 150px 10px 130px ;
+            background-color: red;
+        }
+        span{
+            color: gray;
+            font-size: 15px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        #a1{
+            text-decoration: none;
+            color: white;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        #d2{
+            margin-top: 30px;
+        }
+        #d3{
+            margin-top: 30px;
+        }
+        #a2{
+            text-decoration: none;
+            color: white;
+            margin-top: 20px;
+        }
+        #a3{
+            text-decoration: none;
+            color: rgb(0, 123, 255);
+            margin-top: 20px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <div id="box">
+            <form action="" id="form1">
+                <h1>Sign In</h1>
+                <input type="text" name="email" id="mail" placeholder="Email or phone number">
+                <input type="password" name="pass" id="pass" placeholder="Password">
+                <div id="btn">Sign In</div>
+                <div>
+                    <input type="checkbox" name="check" id="check" ><span>Remember me</span>
+                    <a id="a1" href="#">Nedd help?</a>
+                </div>
+                <div id="d2">
+                    <span id="s2">New to Netflix? </span>
+                    <a id="a2" href="#">Sign up now</a>
+                </div>
+                <div id="d3">
+                    <span id="s2">This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                    <a id="a3" href="#"> Learn more.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>

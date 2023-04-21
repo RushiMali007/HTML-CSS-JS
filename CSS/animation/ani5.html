@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            margin: 0 0 0 300px;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 1px solid;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-fill-mode: forwards;
+            border-radius: 50%;
+        }
+        @keyframes change {
+            from{
+                top:0px;
+                box-shadow: 4px 4px 4px;
+                
+            }
+            to{
+                top: 500px;
+                background-color: indigo;
+                box-shadow: 10px 10px 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent"></div>
+</body>
+</html>

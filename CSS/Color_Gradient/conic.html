@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main{
+           
+           display: inline-block;
+            
+        }
+        #main{
+            height: 800px;
+            width: 2200px;
+            border: 1px solid;
+           display: inline-block;
+           background-image: linear-gradient(to  right, red,orange,yellow, green,blue, indigo,violet);
+           padding-top: 400px ;
+           padding-left: 700px ;
+           padding: 0 auto;
+        }
+        #conic1{ 
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            background: conic-gradient(red 0deg,red 45deg,  orange 45deg,orange 90deg,  yellow 90deg,yellow 135deg,green 135deg,green 180deg, blue 180deg, blue 225deg,indigo 225deg, indigo 270deg, violet 270deg,violet 315deg, gray 315deg, gray 360deg);
+        }
+        #conic2{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            background: conic-gradient(red 0deg , red 45deg, yellow 45deg , yellow 135deg, blue 135deg, blue 225deg,violet 225deg , violet 315deg, red 315deg, red 360deg );
+        }
+        #conic3{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            background: conic-gradient(red 0deg , red 45deg, red 45deg , red 135deg, blue 135deg, blue 225deg,violet 225deg , violet 315deg, red 315deg, red 360deg );
+        }
+        #conic4{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            border-radius: 50%;
+            background: conic-gradient(red 0deg, orange 45deg ,yellow 90deg, green 135deg, blue 180deg, indigo 225deg, violet 270deg, red 360deg);
+        }
+        #conic5{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            background-image: repeating-conic-gradent(red 10deg,orange 10deg yellow 10deg, );
+
+        }
+    </style>
+</head>
+<body>
+  
+    <div id="main">
+        
+    <div class="Main" id="conic1"></div>
+    <div class="Main" id="conic2"></div>
+    <div class="Main" id="conic3"></div>
+    <div class="Main" id="conic4"></div>
+    <div class="Main" id="conic5"></div>
+    </div>
+   
+   
+</body>
+</html>

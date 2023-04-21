@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .box{
+            height: 100px;
+            width: 80px;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+        }
+        #box2{
+            /* it will take refrance from parent component */
+            position: absolute;
+            /* top: 100px; */
+            /* right: 100px;
+            left: 100px;
+            bottom: 100px; */
+            z-index: -1;
+            /* z-index will provide value to accress hiden value */
+        }
+        #box3{
+            /* it will take refrance from current position */
+            /* position: relative;
+            top: 100px; */
+            /* bottom: 100px;
+            left: 100px;
+            right: 100px; */
+            background-color: orange;
+        }
+        /* #box4{
+            it will fixed at that position
+            position: fixed;
+            top: 100px;
+        } */
+        /* #box5{
+            it will only take distance from top
+            position: sticky;
+            top: 100px;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+    <div class="box" id="box4">Box4</div>
+    <div class="box" id="box5">Box5</div>
+    <div class="box" id="box6">Box6</div>
+</body>
+</html>

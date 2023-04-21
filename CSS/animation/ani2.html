@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        #boll{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin: 0px 500px;
+            margin-top: 150px;
+            animation-name: boll;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            margin: 0px 500px;
+            /* margin-top: 200px; */
+        }
+
+        @keyframes boll {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                height: 100px;
+                width: 100px;
+                background-color: yellow;
+            }
+            50%{
+                top: 250px;
+                left: 200px;
+                background-color: indigo;
+            }
+            75%{
+                top: 250px;
+                left: -50px;
+                background-color: green;
+            }
+            100%{
+                top: 0px;
+                left: -50px;
+                background-color: orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="boll"></div>
+    <div id="box"></div>
+</body>
+</html>
